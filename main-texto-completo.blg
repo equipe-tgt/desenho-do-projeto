@@ -3,7 +3,6 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main-texto-completo.aux
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Reallocating 'name_of_file' (item size: 1) to 12 items.
-Reallocating 'name_of_file' (item size: 1) to 31 items.
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 The style file: abntex2-alf.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -17,7 +16,6 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-Database file #3: exemplos/abntex2-doc-abnt-6023.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -29,7 +27,7 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 You've used 18 entries,
             6714 wiz_defined-function locations,
-            1285 strings with 11405 characters,
+            1284 strings with 11375 characters,
 and the built_in function-call counts, 10463 in all, are:
 = -- 827
 > -- 228
