@@ -32,30 +32,34 @@
 \contentsline {subsection}{\numberline {3.3.3}Banco de dados}{23}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Gerenciamento de tarefas}{24}{subsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.3.5}Versionamento}{24}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Escalabilidade}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Manutenibilidade da aplicação}{24}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}\emph {Logs}}{25}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Integração Contínua}{25}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}\emph {Code Conventions}}{25}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Testes}{26}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Segurança, Privacidade e Legislação}{27}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Viabilidade Financeira}{28}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Gerenciamento de Custos}{28}{subsection.3.7.1}%
-\contentsline {subsubsection}{\numberline {3.7.1.1}Análise de Requisitos e Desenvolvimento}{28}{subsubsection.3.7.1.1}%
-\contentsline {subsubsection}{\numberline {3.7.1.2}Manutenções}{28}{subsubsection.3.7.1.2}%
-\contentsline {subsection}{\numberline {3.7.2}Custos de deploy e de Ambiente de Produção}{29}{subsection.3.7.2}%
-\contentsline {subsubsection}{\numberline {3.7.2.1}Frontend}{29}{subsubsection.3.7.2.1}%
-\contentsline {subsubsection}{\numberline {3.7.2.2}Backend}{29}{subsubsection.3.7.2.2}%
-\contentsline {subsubsection}{\numberline {3.7.2.3}Banco de Dados}{29}{subsubsection.3.7.2.3}%
-\contentsline {subsection}{\numberline {3.7.3}Medidas de Obtenção de Retorno Financeiro}{30}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.4}Modelagem}{24}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Modelo Entidade-Relacionamento (MER)}{24}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Apresentação do MER}{24}{subsubsection.3.4.1.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.2}Definição de Índices}{25}{subsubsection.3.4.1.2}%
+\contentsline {section}{\numberline {3.5}Escalabilidade}{26}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Manutenibilidade da aplicação}{26}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}\emph {Logs}}{26}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Integração Contínua}{27}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}\emph {Code Conventions}}{27}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Testes}{28}{subsection.3.6.4}%
+\contentsline {section}{\numberline {3.7}Segurança, Privacidade e Legislação}{29}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Viabilidade Financeira}{30}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Gerenciamento de Custos}{30}{subsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.1.1}Análise de Requisitos e Desenvolvimento}{30}{subsubsection.3.8.1.1}%
+\contentsline {subsubsection}{\numberline {3.8.1.2}Manutenções}{30}{subsubsection.3.8.1.2}%
+\contentsline {subsection}{\numberline {3.8.2}Custos de deploy e de Ambiente de Produção}{30}{subsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}Frontend}{30}{subsubsection.3.8.2.1}%
+\contentsline {subsubsection}{\numberline {3.8.2.2}Backend}{30}{subsubsection.3.8.2.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.3}Banco de Dados}{31}{subsubsection.3.8.2.3}%
+\contentsline {subsection}{\numberline {3.8.3}Medidas de Obtenção de Retorno Financeiro}{32}{subsection.3.8.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Planejamento e Gerenciamento do Projeto}}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Metodologia de Gestão e Desenvolvimento de Projeto}{31}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Organização da Equipe}{31}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Gestão de Tempo}{32}{section.4.3}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Planejamento e Gerenciamento do Projeto}}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Metodologia de Gestão e Desenvolvimento de Projeto}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Organização da Equipe}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Gestão de Tempo}{34}{section.4.3}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{33}{section*.12}%
-\contentsline {chapter}{GLOSSÁRIO}{33}{section*.12}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{35}{section*.12}%
+\contentsline {chapter}{GLOSSÁRIO}{35}{section*.12}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
