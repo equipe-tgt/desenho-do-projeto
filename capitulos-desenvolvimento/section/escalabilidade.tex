@@ -1,0 +1,26 @@
+\section{Escalabilidade}
+
+A escalabilidade da aplicação é sua capacidade de se adequar a um
+amplo volume de requisições, mantendo a estabilidade do sistema e a
+velocidade de respostas. Um sistema escalável está apto para responder
+adequadamente nestes momentos, assim como liberar seus recursos em
+momentos com poucas requisições.
+
+Por se tratar de algo relativo ao processamento de requisições, a
+escalabilidade diz respeito ao \gls{backend}, que centraliza os
+pedidos dos usúarios. A camada cliente por outro lado, por focar
+exclusivamente na lógica de visualização, e rodar em dispositivos
+mobile, não exige tanta capacidade de processamento, e a
+escalabilidade não é uma preocupação para esta camada.
+
+Como foi mencionado, a aplicação \gls{backend} ficará armazenada na
+plataforma Amazon AWS. Existe um processo da ferramenta de integração
+contínua Jenkins para aumentar o número de instâncias ativas em
+produção, e este processo será acionado em momentos com intenso volume
+de requisições.
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../../desenho"
+%%% End:

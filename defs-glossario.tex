@@ -1,0 +1,111 @@
+
+% Definições para glossario
+
+% ATENCAO o SHARELATEX GERA O GLOSSARIO/LISTAS DE SIGLAS SOMENTE UMA VEZ
+% CASO SEJA FEITA ALGUMA ALTERAÇÃO NA LISTA DE SIGLAS OU GLOSSARIO É NECESSARIO UTILIZAR A OPÇÃO :
+% "Clear Cached Files" DISPONIVEL NA VISUALIZAÇÃO DOS LOGS 
+% ---
+% https://www.sharelatex.com/learn/Glossaries
+
+\newglossaryentry{API} {
+    name=API,
+    plural= {APIs},
+    description={Uma Interface de Progamação de Aplicação (\emph{Application Programming Interface}), são pontos que a
+    aplicação expoõe para permitir que usuários ou serviços externos
+    executem tarefas dentro da aplicação.}
+}
+\newglossaryentry{deploy} {
+    name=deploy,
+    description={Processo pelo qual a aplicação é implantada em ambiente
+  de prpdução, e está disponível para os usuários finais.}
+}
+\newglossaryentry{frontend} {
+    name={front-end},
+    description={Um sistema \emph{front-end} é aquele que encontra na
+    camada cliente, em uma aplicação de duas camadas. Sua
+    principal função, no escopo deste projeto, é atuar como interface
+    gráfica para o usário, coletar dados e enviá-los para o \emph{back-end}.}
+}
+\newglossaryentry{GUI} {
+    name=GUI,
+    description={Interface gráfica de usuário é uma forma visual de se
+    apresentar dados e coletar interações com o usuário, em oposição a
+    linha de comando, que funciona por texto apenas.}
+}
+\newglossaryentry{backend} {
+    name={back-end},
+    description={Um sistema \emph{back-end} é aquele que encontra na
+    camada de servidor, em uma aplicação de duas camadas. Sua
+    principal função é fornecer informações e capacidade de
+    processamento a aplicação cliente.}
+}
+\newglossaryentry{daily} {
+    name=daily,
+    description={Cerimônia diária do Scrum, é uma reunião de geralmente 15 minutos com o objetivo de alinhar o que será feito no dia e se existe algum impedimento.}
+}
+
+\newglossaryentry{REST} {
+    name=REST,
+    description={A Tranfêrencia por Representação de Estado é uma forma
+    de se transferir dados na qual os atirbutos de um objeto (seu
+    estado) são serializados em um arquivo de formato específico, e
+    o objeto pode ser reconstituído na aplicação que recebe o arquivo.}
+}
+
+\newglossaryentry{kanban} {
+    name=kanban,
+    description={Framework de gestão visual de fluxo de produção, que consiste no uso de cartões coloridos que separam as diferentes fases do desenvolvimento das tarefas (to do, doing, done).}
+}
+
+\newglossaryentry{scrum} {
+    name=scrum,
+    description={Framework ágil utilizado em desenvolvimentos iterativos
+    e incrementais.}
+}
+
+\newglossaryentry{sprint} {
+    name=sprint,
+    description={Período de tempo limitado dentro do Scrum onde uma quantidade de histórias de usuário incrementáveis são desenvolvidas.}
+}
+
+\newglossaryentry{sprint-backlog} {
+    name={sprint backlog},
+    description={Lista das histórias de usuário que serão desenvolvidas durante a Sprint a ser iniciada.}
+}
+
+\newglossaryentry{product-backlog} {
+    name={product backlog},
+    description={Lista de todos os requisitos e funcionalidades desejadas para um produto.}
+}
+     
+\newglossaryentry{framework} {
+    name=framework,
+    description={Conjunto de ações e estratégias que possuem um ojeto e objetivo em específico;
+    Na programação, é um conjunto de pacotes e bibliotecas que abstarai
+    alguma função complexa, geralmente de nível mais baixo, e sobre o
+    qual uma aplicação pdoe ser contruída. Ex: o framework web Spring
+    asbtrai a lógica de implementação de um servidor, auxiliando a
+    criação de endpoints, rotas e processamento de HTTP.}
+}     
+      
+\newglossaryentry{planning} {
+    name={sprint planning},
+    description={Cerimônia do Scrum que ocorre antes do início
+    de uma nova Sprint com o objetivo de planejar quais histórias
+    de usuário serão desenvolvidas naquela iteração.}
+}  
+
+\newglossaryentry{review} {
+    name={sprint review},
+    description={Cerimônia do Scrum que ocorre no fim da Sprint
+    com o objetivo de validar as entregas daquele período.}
+}      
+
+\newglossaryentry{retrospective} {
+    name={sprint retrospective},
+    description={Cerimônia do Scrum que ocorre no fim da Sprint com
+    o objetivo de avaliar os pontos positivos e negativos
+    da Sprint, agrupando possibilidades de melhorias
+    para a próxima Sprint.}
+}                    
+% Normalmente somente as palavras referenciadas são impressas no glossario, portanto é necessário referenciar utilizando \gls{identificação}                

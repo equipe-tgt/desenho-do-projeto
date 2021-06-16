@@ -1,0 +1,18 @@
+\section{Segurança, Privacidade e Legislação}
+
+A principal lei brasileira que trata de tratamento de dados  nos meios digitais é a lei N° 13.709, sancionada em 14 de Agosto de 2018 \cite{leigpd} e que entrou em vigor no ano de 2020, conhecida como Lei Geral de Proteção de Dados (\label{sig:lgpd}\hyperlink{s:lgpd}{LGPD}).
+
+Seguindo o disposto no Artigo 6°, inciso terceiro da LGPD, a aplicação vai coletar o mínimo de dados do usuário necessários para uso da aplicação, os dados serão: localização, endereço de email e nome do usuário. Sendo facultativo ao usuário ativar ou não a sua localização.
+
+O design da aplicação vai seguir o princípio da transparência. O usuário do aplicativo será informado de quais as informações que serão coletadas. O próprio sistema Android, por padrão, solicita ao usuário permissão para uso da localização, um dos dados que será necessário coletar, caso o usuário opte pela detecção do local da compra automaticamente.
+
+Como a maioria dos sistemas atuais, utilizaremos uma API (Application Program Interface) para realizar a comunicação e transferência de dados entre a interface de usuário e o servidor. Essa arquitetura possui intrinsecamente vulnerabilidades conhecidas e quando não são bem projetadas as API’s podem ser um dos pontos fracos do sistema quando se trata de segurança. A empresa de consultoria Gartner \cite{anilLamba} prevê que a tendência é que em 2022 as API’s se tornem o principal foco de ataques cibernéticos.
+
+Cientes desse cenário, foi definido que o sistema deverá seguir algumas boas práticas de desenvolvimento, citadas brevemente a seguir:
+\begin{itemize}
+	\item Autenticação: As requisições apenas serão aceitas se o usuário estiver logado no sistema;
+	\item Criptografia: Para evitar ataques do tipo man-in-the-middle as mensagens entre cliente e servidor serão criptografadas, seguindo o protocolo HTTPS;
+	\item Documentação dos \textit{endpoints} sensíveis: Será feito um levantamento de todos os \textit{endpoints} que acessam informações sensíveis, para garantir que apenas usuários autenticados tenham acesso;
+\end{itemize}
+
+Como medida de segurança, o banco de dados não irá armazenar as senhas das contas dos usuários e sim um \textit{hash} da senha, e este será comparado com o \textit{hash} da senha informado no momento do login. Ainda como uma forma de segurança, ao cadastrar a senha ou mudar a senha atual o usuário não poderá cadastrar senha que não possua menos de seis dígitos, e que não tenham letras maiúsculas e minúsculas e números, e deverá ter no mínimo um caractere especial.

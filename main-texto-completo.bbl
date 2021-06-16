@@ -1,0 +1,90 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Adjuto 2018]{Celular}
+\abntrefinfo{Adjuto}{ADJUTO}{2018}
+{ADJUTO, G. Celular é o principal meio de acesso à internet no país.
+\emph{Agência Brasil}, 2018.}
+
+\bibitem[Amazon 2021]{AmazonRDS}
+\abntrefinfo{Amazon}{AMAZON}{2021a}
+{AMAZON. Amazon rds on vmware pricing.
+2021.}
+
+\bibitem[Amazon 2021]{AmazonEC2}
+\abntrefinfo{Amazon}{AMAZON}{2021b}
+{AMAZON. Preço sob demanda do amazon ec2.
+2021.}
+
+\bibitem[Angelo 2003]{ComprasNaoPlanejadas}
+\abntrefinfo{Angelo}{ANGELO}{2003}
+{ANGELO, C. As compras não planejadas em supermercados: a importância do
+  tempo e da organização da loja na determinação dos gastos.
+\emph{Revista de Administração Contemporânea}, 2003.}
+
+\bibitem[Aniche 2014]{TDD}
+\abntrefinfo{Aniche}{ANICHE}{2014}
+{ANICHE, M. Test driven development.
+2014.}
+
+\bibitem[Au 2013]{GroceryList}
+\abntrefinfo{Au}{AU}{2013}
+{AU, G.~M. N. The cost-effectiveness of shopping to a predetermined grocery
+  list to reduce overweight and obesity.
+\emph{Macmillan Publishers Limited}, 2013.}
+
+\bibitem[Brasil 2018]{leigpd}
+\abntrefinfo{Brasil}{BRASIL}{2018}
+{BRASIL. \emph{Lei Geral de Proteção de Dados}. 2018.
+Dispon{\'\i}vel em:
+  \url{http://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2018/lei/l13709.htm}.
+  Acesso em: 7 jun. 2021.}
+
+\bibitem[COLELLA 2015]{PlanejamentoFinanceiroFamiliar}
+\abntrefinfo{COLELLA}{COLELLA}{2015}
+{COLELLA, M.~T. Planejamento financeiro familiar: A importância da
+  organização e controle no orçamento familiar.
+\emph{FAIT}, 2015.}
+
+\bibitem[CONLEY 2007]{Towel}
+\abntrefinfo{CONLEY}{CONLEY}{2007}
+{CONLEY, K. Towel: Towards an intelligent to-do list.
+\emph{AAAI ORGANIZATION}, 2007.}
+
+\bibitem[Google 2021]{GoogleAdMob}
+\abntrefinfo{Google}{GOOGLE}{2021}
+{GOOGLE. Quanto é possível lucrar com a admob.
+2021.}
+
+\bibitem[Lamba 2019]{anilLamba}
+\abntrefinfo{Lamba}{LAMBA}{2019}
+{LAMBA, A. Api design principles and security best practices – accelerate
+  your business without compromising security.
+\emph{SSRN Electronic Journal}, 01 2019.}
+
+\bibitem[Melhoramentos 2021]{Michaelis}
+\abntrefinfo{Melhoramentos}{MELHORAMENTOS}{2021}
+{MELHORAMENTOS, E. Organização.
+\emph{UOL}, 2021.}
+
+\bibitem[PADMANABHAN 2020]{Devopedia2020}
+\abntrefinfo{PADMANABHAN}{PADMANABHAN}{2020}
+{PADMANABHAN, A. Convention over configuration.
+\emph{Devopedia}, 2020.}
+
+\bibitem[Seung-Ho 2015]{MobileApps}
+\abntrefinfo{Seung-Ho}{SEUNG-HO}{2015}
+{SEUNG-HO, L. Experimental comparison of hybrid and native applications for
+  mobile systems.
+\emph{International Journal of Multimedia and Ubiquitous Engineering}, 2015.}
+
+\bibitem[Sun{ }Microsystems 1997]{Oracle1997}
+\abntrefinfo{Sun{ }Microsystems}{SUN{ }MICROSYSTEMS}{1997}
+{SUN{ }MICROSYSTEMS, I. Java coding conventions.
+1997.}
+
+\end{thebibliography}

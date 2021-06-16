@@ -1,0 +1,119 @@
+\section{Manutenibilidade da aplicação}
+
+É fundamental para o desenvolvimento do projeto, tanto o previsto
+quanto em avanços posteriores, que a aplicação atinja um nível adequado
+de qualidade, e para tanto certos requisitos de manutenibilidade devem
+ser estabelecidos.  Estes requisitos permitem a
+
+\subsection{\emph{Logs}}
+
+Como forma de monitorar a aplicação em tempo de execução,
+especialmente na camada de servidor, \emph{logs} serão usados para
+registrar o estado dos objetos. A ferramenta Log4j será usada, uma vez
+que os membros do time já tem mais familiaridade com ela. Esta
+ferramenta perimite o registro em diversos níveis, como
+\begin{itemize}
+  \em
+\item info
+\item debug
+\item warn
+\item error
+\end{itemize}
+e pode ser configurada para que apenas os dois últimos
+sejam registrados no ambiente de produção. Desta forma a cada ponto de
+falha da aplicação um log de nível apropriado será colocado para que
+problemas sejam rapidamente identificados, analisados e resolvidos.
+
+\subsection{Integração Contínua}
+
+Visando manter o serviço sempre atualizado para o usuário, a
+ferramenta de integração contínua Jenkins foi selecionada para a
+implantação da aplicação \gls{backend} em produção. Ela
+permite, a partir do código no repositório git, a execução de testes,
+o build e o \gls{deploy} para o ambiente de produção, automatizando tarefas
+complicadas de se executar em máquinas remotas.
+
+Para o \gls{frontend}, no entanto, não existem ferramentas de
+integração contínua, uma vez que as imagens do aplicativo mobile
+precisam ser aprovadas pelas lojas de aplicativo. Contudo, ainda é
+possível usar ferramentas de CI para a execução de testes e
+verificação da integridade do código a cada nova versão.
+
+\subsection{\emph{Code Conventions}}
+
+As convenções de código são acordos internos ao time que visam
+estandartizar a forma como os diversos integrantes do time produzem
+seus códigos.  Elas visam facilitar o entendimento mútuo entre os
+integrantes do time, de modo o estilo de progamação seja indistiguível
+e independente de seus autores.  Geralmente, as convenções de código
+estabelecem estilos para se organizar o código textualmente, isto é,
+dizem respeito a forma como nomes de variáveis são escolhidas e
+comentários são posicionados, por exemplo.
+
+As convenções adotadas são baseadas na especificação da
+\citeauthor{Oracle1997}, de 1997. Esta é comumente usadas para o
+desenvolvimento na linguagem Java, e muito próxima do padão adotado em
+JavaScript, e vale destacar o seguintes pontos:
+\begin{itemize}
+\item Minimizar o uso de variáveis, funções e objetos globais.
+\item As declarações globais estarão preferencialmente no início do arquivo.
+\item Declarar as variáveis próximo do ponto onde elas serão inicializadas.
+\item A indentação é de 4 espaços.
+\item Linhas mais longas que 80 caracteres serão quebradas e
+  indentadas a 8 espaços.
+\item Pacotes e variáveis com nomes curtos, em \texttt{camelCase} e substantivos.
+\item Classes e interfaces em \texttt{CamelCase} e substantivos.
+\item Métodos em \texttt{camelCase} e verbos.
+\item Constantes em \texttt{UPPER\_CASE}.
+\end{itemize}
+
+No entanto, especificamente para a linguagem Java,
+\begin{itemize}
+\item Classes e métodos devem ser documentados com um comentário na
+  seguinte forma, uma vez que as IDEs reconhecem este formato e
+  formatam o text na forma de \emph{pop-ups} quando o cursor está
+  sobre uma referência a esta classe.
+\begin{verbatim}
+/**
+ * Class ListService
+ *
+ * Implementar endpoints para as funcionalidades de lista.
+ */
+\end{verbatim}
+\end{itemize}
+
+\subsection{Testes}
+
+Testes são uma ferramenta fundamental para o desenvolvimento da
+aplicação, uma vez que garenatem, em tempo de compilação, o
+comportamento correto do aplicativo. Para além disso, testes tem um
+papel de documentação, uma vez que encapsulam de forma breve o
+comportamento esperado das classes e métodos produzidos, e podem ser
+consultados em caso de dúvida quando ao uso destes. Este tipo de teste
+é chamado de teste unitário, em oposição aos testes de integração, que
+verificam o funcionamento da aplicação de ponta-a-ponta, isto é, a
+partir de uma chamada a um endpoint, apenas os serviços externos são
+mimetizados, garantindo o funcionamento correto de toda a aplicação.
+
+Desta forma, a construção de testes, de ambos os tipos é de extrema
+importância para a elaboração do projeto visando a sua
+manutenibilidade, e será o primeiro passo de uma sprint, após o
+planejamento, a construção de testes relevantes para a tarefa,
+seguindo os princípios do TDD\cite{TDD}. Como as ferramentas de teste são
+específicas de cada linguagem, cada camada da aplicação fará uso de
+frameworks distintos.
+
+O \gls{backend} será testado com o framework JUnit, fazendo uso da
+biblioteca Mockito quando necessário simular comportamentos de objetos
+que não são o alvo da suite de teste. Este framework ainda oferece
+ferramentas para testar o banco de dados, ou melhor, testar a conexão
+com o banco e verificar o comportamento das classes de acesso a ele.
+Já os teste de \gls{frontend} serão feitos com a biblioteca Jest,
+que auxilia a construção de testes unitários, e por se tratar de uma
+\gls{GUI}, as interções de usuário devem ser simuladas também. Para tanto, a
+blioteca React Testing Library será usada.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../../desenho"
+%%% End:

@@ -1,0 +1,13 @@
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%
+%
+\ifdef{\printnoidxglossary}{
+\addcontentsline{toc}{chapter}{GLOSSÁRIO}
+    \printnoidxglossary
+    %\printglossaries
+}{
+ \chapter{GLOSSÁRIO}
+ \printnoidxglossary
+}
