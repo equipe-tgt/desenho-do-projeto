@@ -39,3 +39,30 @@ No MySQL, temos dois tipos de índices:
 
 Nesse sentido, foram definidos índices secundários para as chaves estrangeiras (foreign key - FK) e para as colunas que no qual serão buscada no frontend por meio de campos de busca.
 
+\subsection{Padrão Arquitetural}
+
+A arquitetura escolhida para o desenvolvimento do Lixt foi cliente-servidor (com React-Native e Spring, respectivamente). Nesse tópico, iremos abordar detalhadamente o desenvolvimento de cada serviço.
+
+\begin{figure}[H]
+  \centering
+  \caption{Detalhamento da Arquitetura}
+  \label{fig:diagrama-componentes-arquitetura}
+  \includegraphics[scale=0.5]{diagrama-componentes-arquitetura}
+  \legend{Fonte: Os autores}
+\end{figure}
+
+O cliente, que é uma aplicação mobile para Android, realizará requisições ao backend e, assim, conseguir operar suas funcionalidades e exibir os dados no layout de modo coerente no aplicativo.
+
+O servidor, por sua vez, será dividida em camadas lógicas. A camada que será exposta e acessível para o frontend são os endpoints dos controllers, recebendo e retornando DTOs (padrão Data Transfer Object) em formato JSON. Após acessar o endpoint, caso esteja devidamente autenticado no OAuth2 e com o token de autorização, será chamado o mapper, responsável por converter DTO em model.
+
+Após essa conversão, dependendo da complexidade da regra de negócio, pode chamar o service - para regras de negócios simple -  ou um facade - responsável por encapsular regras de negócios complexas, chamando os services a fim de evitar injeção de dependência cruzada entre os services. 
+
+Os services, por sua vez, encapsulam as operações de CRUD do hibernate que são definidas nas Repositories.
+
+Após a realização da requisição, será enviada uma resposta para o frontend, onde o mapper, dessa vez, irá converter o model em DTO, de modo que consiga tratar o dado a partir de formatações, retirada de dados sensíveis e garantindo maior performance ao enviar apenas os dados que serão devidamente utilizados (e não dados em excesso), garantindo menor dados em tráfego na rede, menor consumo de internet e maior velocidade.
+
+O OAuth2 é o serviço de autenticação e autorização adotado que irá se aproveitar dos services para realizar a verificação das credenciais fornecidas no momento do login.
+
+O Utils é uma biblioteca global que pode ser reutilizado em todo o projeto como, por exemplo, validação de dados, formatação de dados, entre outros.
+
+O backend será hospedado no Amazon EC2 e o banco de dados MySQL estará disponível no Amazon RDS.
