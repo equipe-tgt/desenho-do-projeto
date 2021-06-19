@@ -10,13 +10,14 @@ O Modelo Entidade-Relacionamento (MER) é a primeira abstração do banco de dad
 
 Antes de tudo, é necessário definir os padrões utilizados para definir o banco de dados. O banco de dados foi modelado em inglês com o intuito de apresentar coerência com o desenvolvimento.
 
-Todas as tabelas começam o prefixo ``tb\_''. Exemplo: tb\_usuario. Todas as colunas possuem o prefixo de seu tipo:
+Todas as tabelas começam o prefixo ``tb\_''. Exemplo: tb\_usuario. Todas as colunas possuem o prefixo de seu tipo de dado:
 
 \begin{itemize}
 	\item \underline{Chaves Primárias e Estrangeiras}: Começam com ``id\_''. Exemplo: id\_user.
 	\item \underline{Dados de Texto}: Começam com ``st\_'', de string. Exemplo: st\_name.
 	\item \underline{Dados Numéricos}: Começam com ``dt\_'', de date. Exemplo: dt\_createdAt.
 	\item \underline{Dados de Texto}: Começam com ``nr\_'', de number. Exemplo: nr\_price.  
+		\item \underline{Dados Booleanos}: Começam com ``bl\_''. Exemplo: bl\_isActive.  
 	\item \underline{Enum}: Começam com ``en\_'', sendo que os enums serão tratados no backend. Exemplo: en\_status.  
 \end{itemize}
 
@@ -65,7 +66,267 @@ Nesse sentido, foram definidos índices secundários para as chaves estrangeiras
 
 O dicionário de dados é um suporte ao MER, descrevendo todas os dados, restriçõe e fornecendo breves descrições de cada campo de cada tabela.
 
-Antes de tudo, foi criado siglas para simplificar os dicionários de dados apresentados: Chave Primária (PK), Chave Estrangeira (FK), Not Null (NN), Unique (UQ), Index (IDX)
+Antes de tudo, foi criado siglas para simplificar os dicionários de dados apresentados: Chave Primária (PK), Chave Estrangeira (FK), Not Null (NN) e Unique (UQ). Lembrando também que toda PK é automaticamente NN, UQ e indexado.
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_user]{Dicionário de Dados: tb\_user}
+\label{dicionario-dados-usuario}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_user} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_user & INT & PK & Primária & Campo identificador de usuário \\
+    \hline
+	st\_name & VARCHAR(45) & NN &  & Campo obrigatório para guardar o nome do usuário \\
+    \hline
+    st\_email & VARCHAR(120) & UQ, NN & Primária & Campo obrigatório para guardar o email do usuário \\
+	\hline
+	st\_password & VARCHAR(120) & NN &  & Campo obrigatório para guardar o hash da senha do usuário \\
+   \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_list]{Dicionário de Dados: tb\_list}
+\label{dicionario-dados-lista}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_list} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_list & INT & PK & Primária & Campo identificador da lista \\
+    \hline
+	st\_nameList & VARCHAR(45) & NN &  & Campo obrigatório para conseguir apelidar uma lista \\
+    \hline
+    id\_user & INT & NN & Secundária & Chave estrangeira obrigatória que referencia o usuário que criou a lista \\
+	\hline
+	st\_description & VARCHAR(120) & &  & Campo facultativo que possibilita a descrição da lista \\
+   \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_listMembers]{Dicionário de Dados: tb\_listMembers}
+\label{dicionario-dados-membrosDaLista}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_listMembers} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_listMembers & INT & PK & Primária & Campo identificador da tabela intermediária entre lista e usuário \\
+    \hline
+	en\_enum & INT & NN &  & Enum para verificar o status do convite para um usuário participar da lista \\
+    \hline
+    id\_user & INT &  & Secundária & Chave estrangeira facultativa que referencia o usuário que criou o produto \\
+    \hline
+    id\_list & INT & NN & Secundária & Chave estrangeira obrigatória que referencia a lista para o usuário participar \\
+	\hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_category]{Dicionário de Dados: tb\_category}
+\label{dicionario-dados-categoria}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_category} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_category & INT & PK & Primária & Campo identificador da categoria \\
+    \hline
+	st\_name & VARCHAR(45) & NN &  & Campo obrigatório para denominar a categoria \\
+   \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_product]{Dicionário de Dados: tb\_product}
+\label{dicionario-dados-produto}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_product} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_product & INT & PK & Primária & Campo identificador da tabela produto \\
+    \hline
+	st\_name & VARCHAR(45) & NN & Secundária & Campo obrigatório do nome do produto \\
+    \hline
+    nr\_price & DECIMAL &  &  & Campo facultativo do preço do produto \\
+	\hline
+	id\_user & INT & & Secundária & Chave estrangeira facultativa que referencia o usuário que criou o produto \\
+	\hline
+    id\_category & INT & NN & Secundária & Chave estrangeira obrigatória que referencia a categoria do produto \\
+    \hline
+    nr\_measureValue & DECIMAL & NN &  & Valor quantitativo obrigatório da unidade de medida do produto \\
+    \hline
+    en\_measureType & INT & NN &  & Enum obrigatório do tipo da unidade de medida do produto \\
+    \hline
+    st\_barcode & VARCHAR(20) & NN & Secundária & Valor obrigatório do barcode do produto \\
+   \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_purchaseLocal]{Dicionário de Dados: tb\_purchaseLocal}
+\label{dicionario-dados-localCompra}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_purchaseLocal} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_purchaseLocal & INT & PK & Primária & Campo identificador do local da compra \\
+    \hline
+	st\_name & VARCHAR(45) & NN &  & Campo obrigatório para denominar o local da compra \\
+	\hline
+	point\_location & POINT & NN &  & Campo obrigatório para guardar as informações relativo à geolocalização do local (latitude e longitude) \\
+   \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_purchase]{Dicionário de Dados: tb\_purchase}
+\label{dicionario-dados-compra}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_purchase} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_purchase & INT & PK & Primária & Campo identificador Da compra \\
+   \hline
+   id\_user & INT & NN & Secundária & Chave estrangeira obrigatória que referencia o usuário que realizou a compra \\
+   \hline
+   id\_list & INT &  & Secundária & Chave estrangeira facultativa que referencia a lista na qual a compra foi baseada \\
+   \hline
+   id\_purchaseLocal & INT &  & Secundária & Chave estrangeira facultativa que referencia o local em que a compra foi realizada \\
+   \hline
+   nr\_purchasePrice & DECIMAL & NN &  & Campo obrigatório que registra o valor final da compra \\
+   \hline
+   dt\_purchaseDate & DATE & NN &  & Campo obrigatório que registra a data da compra \\
+   \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_itemOfPurchase]{Dicionário de Dados: tb\_itemOfPurchase}
+\label{dicionario-dados-itemDaCompra}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_itemOfPurchase} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_itemOf-Purchase & INT & PK & Primária & Campo identificador da tabela item da compra \\
+    \hline
+    id\_purchase & INT & NN & Secundária & Chave estrangeira facultativa que referencia a compra no qual o item foi comprado \\
+    \hline
+    id\_product & INT & NN & Secundária & Chave estrangeira facultativa que referencia os dados base do produto \\
+    \hline
+	st\_name & VARCHAR(45) & NN & Secundária & Campo obrigatório do nome do item da compra \\
+    \hline
+    nr\_price & DECIMAL & NN &  & Campo obrigatório do preço do item da compra \\
+    \hline
+    nr\_amount & DECIMAL & NN &  & Campo obrigatório da quantidade do item comprado \\
+    \hline
+    nr\_measureValue & DECIMAL & NN &  & Valor quantitativo obrigatório da unidade de medida do item da compra \\
+    \hline
+    en\_measureType & INT & NN &  & Enum obrigatório do tipo da unidade de medida do item da compra \\
+   \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_productOfList]{Dicionário de Dados: tb\_productOfList}
+\label{dicionario-dados-produtoDaLista}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_productOfList} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_productOfList & INT & PK & Primária & Campo identificador da tabela produto da lista \\
+    \hline
+    id\_list & INT & NN & Secundária & Chave estrangeira obrigatória que referencia a lista no qual o produto está inserido \\
+    \hline
+    id\_assignedUser & INT &  & Secundária & Chave estrangeira facultativa que referencia o usuário que comprará o produto \\
+    \hline
+    id\_userWho-Marked & INT &  & Secundária & Chave estrangeira facultativa que referencia o usuário que comprou o produto \\
+    \hline
+    id\_product & INT & NN & Secundária & Chave estrangeira facultativa que referencia os dados base do produto \\
+    \hline
+	st\_name & VARCHAR(45) & NN & Secundária & Campo obrigatório do nome do item da compra \\
+    \hline
+    bl\_isMarked & TINYINT & NN &  & Campo booleano a fim de verificar se o item foi marcado na lista de compras \\
+    \hline
+    nr\_price & DECIMAL &  &  & Campo facultativo do preço do item da compra \\
+    \hline
+    nr\_amount & DECIMAL &  &  & Campo facultativo da quantidade do item comprado \\
+    \hline
+    nr\_measureValue & DECIMAL &  &  & Valor quantitativo facultativo da unidade de medida do item da compra \\
+    \hline
+    en\_measureType & INT &  &  & Enum facultativo do tipo da unidade de medida do item da compra \\
+   \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
+
+\begin{quadro}[H]
+\centering
+\ABNTEXfontereduzida
+\caption[Dicionário de Dados: tb\_comment]{Dicionário de Dados: tb\_comment}
+\label{dicionario-dados-comentario}
+\begin{tabular}{|p{2.6cm}|p{2.6cm}|p{2.2cm}|p{2.0cm}|p{5.00cm}|}
+  \hline
+  \multicolumn{5}{|c|}{tb\_comment} \\
+  \hline
+   \thead{Coluna} & \thead{Tipo de \\ Dado}  & \thead{Restrições \\ de Domínio}  & \thead{Indexação} & \thead{Descrição} \\
+    \hline
+    id\_comment & INT & PK & Primária & Campo identificador da tabela produto do comentário \\
+    \hline
+    id\_productOfList & INT & NN & & Chave estrangeira obrigatória que referencia o produto que recebeu o comentário \\
+    \hline
+    id\_user & INT & NN & Secundária & Chave estrangeira obrigatória que referencia o usuário que realizou o comentário \\
+    \hline
+    st\_content & VARCHAR(200) & NN &  & Campo obrigatório que armazena o comentário feito ao produto \\
+    \hline
+    dt\_createdAt & INT & NN &  & Campo obrigatório que armazena a data no qual o comentário foi realizado \\
+    \hline
+\end{tabular}
+\legend{Fonte: Os autores}
+\end{quadro}
 
 \subsection{Padrão Arquitetural}
 
