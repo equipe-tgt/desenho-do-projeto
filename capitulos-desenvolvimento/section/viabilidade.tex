@@ -30,17 +30,7 @@ Inicialmente gratuíto no Amazon EC2, sendo permitido 750h de instâncias por m�
 
 A partir do momento que for necessário grande porte, será indicado o plano Sob Demanda do Amazon EC2, que garante viabilidade econômica e estratégica (visto que o preço é calculado a partir do uso). 
 
-Nesse plano, o custo de transferência de dados (ou seja, entrada e saída de dados) geram o valor de, na região de São Paulo, no máximo 0,15 USD por GB.
-
-Na \autoref{fig:prices-ec2}, seguem os preços dos planos Sob Demanda na região de São Paulo para Linux usando tipo de instância geral com 1 vCPU.
-
-\begin{figure}[H]
-  \centering
-  \caption{Preços do Amazon EC2 - Sob Demanda}
-  \label{fig:prices-ec2}
-  \includegraphics[scale=0.6]{prices-ec2}
-  \legend{Fonte: \cite{AmazonEC2}}
-\end{figure}
+Utilizando a calculadora da AWS e optando por um servidor Linux da instância t4g.micro com 1 vCPU e 1GiB, com armazenamento SSD de uso geral de 10GB, será custeado o valor de 7,52 USD mensalmente para operar o mês inteiro.
 
 \subsubsection{Banco de Dados} 
 
@@ -48,20 +38,22 @@ Inicialmente gratuíto no Amazon RDS, sendo permitido 750h de instâncias durant
 
 A partir do momento que for necessário grande porte, será indicado o plano Sob Demanda do Amazon RDS, que garante viabilidade econômica e estratégica (visto que o preço é calculado a partir do uso).
 
-Na \autoref{fig:prices-rds}, seguem os preços dos planos Sob Demanda na região do Leste dos EUA (única opção disponível em 07/06/2021).
-
-\begin{figure}[H]
-  \centering
-  \caption{Preços do Amazon RDS - Sob Demanda}
-  \label{fig:prices-rds}
-  \includegraphics[scale=0.6]{prices-rds}
-  \legend{Fonte: \cite{AmazonRDS}}
-\end{figure}	
+Utilizando a calculadora da AWS e optando por um servidor da instância t2.micro de modelo Single-AZ OnDemand, com armazenamento SSD para cada instância de 10GB, será custeado o valor de 27,74 USD mensalmente para operar o mês inteiro.
 
 \subsection{Medidas de Obtenção de Retorno Financeiro}
 
 Para gerar uma receita positiva a fim de obter lucro, haverá duas formas principais de retorno financeiro:
+
 \begin{itemize}
 	\item \underline{Cobrança do aplicativo}: O aplicativo estará disponível gratuitamente na PlayStore, não gerando, portanto, retorno financeiro.
 	\item \underline{Propaganda/Recomendação}: Será utilizado mediador de anuncio AdMob (responsável por conectar aplicações e anunciantes), onde o valor varia por visualizações de anúncios e cliques neles. Contudo, no próprio site do admob, é citado um caso no qual houve 300.000 downloads e arrecadava, através do AdMob, 100 USD por dia. \cite{GoogleAdMob}
 \end{itemize}
+
+A partir da calculadora do AdMob, estimando-se uma quantidade de 250 visitantes por dia, onde há 2 paginas visualizadas por visitante, sendo que a taxa de cliques em anúncios é 1\% e o custo do clique é 0.35 USD, o valor mensal será de 52.5 USD.
+
+\subsection{Conclusão}
+
+Concluindo que, ao utilizar os servidores de baixo porte detalhados acima, será desembolsado cerca de 35.00 USD por mês. Contudo, o valor calculador para 250 visitantes (estimando o valor com baixo engajamento) com os parâmetros detalhados arrecadará 52.5 USD, conseguindo custear os servidores e ainda garantindo margens de lucro.
+
+Conforme o engajamento na aplicação for aumentando, será revisto os planos dos servidores para atender maiores níveis de requisições.
+

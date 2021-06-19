@@ -82,6 +82,48 @@ No entanto, especificamente para a linguagem Java,
 \end{verbatim}
 \end{itemize}
 
+\subsection{\emph{Designs Patterns}}
+
+Como padrões de projetos, serão usados 3 padrões amplamente utilizados pela comunidade de desenvolvimento: (I) Clean Code, (II) SOLID e (III) Gang Of Four. Esses 3 padrões podem ser utilizados tanto no backend quanto no frontend.
+
+\subsubsection{\emph{Clean Code}}
+
+O Clean Code é um conjunto de boas práticas para melhorar o entendimento do código, de modo que seja mais fácil sua leitura. Segue abaixo uma lista das principais boas práticas:
+
+\begin{itemize}
+	\item Nome Significativos para variáveis, classes, métodos, atributos e objetos, evitando abreviaturas desnecessárias e nomes não recorrentemente utilizados, sendo passíveis de busca.
+	\item Evitar números mágicos, recomendando-se utilizar enums e constantes para que seja mais compreensível ao analisar o código.
+	\item Evitar booleanos de forma implícita.
+	\item Evitar condicionais negativos (por exemplo, uma função com nome "naoDevoExecutar()"), visto que dificulta a compreensão de código.
+	\item Encapsular condicionais.
+	\item Nunca comentar o óbio no código.
+	\item Utilizar funções pequenas, tanto para melhorar a leitura quanto para respeitar os padrões do SOLID.
+\end{itemize}
+
+\subsubsection{\emph{SOLID}}
+
+O SOLID é um acrônimo de 5 príncipios da Programação Orientada a Objetos, sendo fundamental para o desenvolvimento e manutenção de software.
+
+\begin{itemize}
+	\item \underline{\textbf{S}ingle Responsiblity Principle}: Uma classe deve ter apenas um motivo para mudar.
+	\item \underline{\textbf{O}pen-Closed Principle}: Uma classe deve estar aberta para extensão, e fechada para modificação, recomendando sempre utilizar a herança e não modificar o código fonte original.
+	\item \underline{\textbf{L}iskov Substitution Principle}: Uma classe derivada deve ser substituível por sua classe base.
+	\item \underline{\textbf{I}nterface Segregation Principle}: Utilizar muitas interfaces específicas é melhor do que uma interface genérica.
+	\item \underline{\textbf{D}ependency Inversion Principle}: Dependa de abstrações e não de implementações.
+\end{itemize}
+
+\subsubsection{\emph{Gang Of Four}}
+
+O GoF (ou Gang of Four) se refere aos profissionais que criaram os 23 padrões de projetos, nos quais seus conceitos serão utilizados no desenvolvimento do Lixt.
+
+Segue abaixo uma breve apresentação dos principais padrões utilizados:
+
+\begin{itemize}
+	\item \underline{Builder}: Será utilizado para criar instâncias legíveis de objetos complexos.
+	\item \underline{Facade}: Encapsula regras de negócios complexas.
+	\item \underline{Observer}: Observa e é capaz de reagir às mudanças de estado de um objeto.
+\end{itemize}
+
 \subsection{Testes}
 
 Testes são uma ferramenta fundamental para o desenvolvimento da
