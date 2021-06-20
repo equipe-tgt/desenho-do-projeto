@@ -87,6 +87,10 @@ Antes de tudo, foi criado siglas para simplificar os dicionários de dados apres
 	\hline
 	st\_password & VARCHAR(120) & NN &  & Campo obrigatório para guardar o hash da senha do usuário \\
    \hline
+    st\_username & VARCHAR(45) & UQ, NN & Secundária & Campo obrigatório para guardar o username do usuário \\
+   \hline
+   bl\_activated & TINYINT & NN &  & Campo obrigatório para verificar se a conta está ativada na plataforma \\
+   \hline
 \end{tabular}
 \legend{Fonte: Os autores}
 \end{quadro}
