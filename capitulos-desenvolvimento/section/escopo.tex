@@ -16,34 +16,27 @@ A seguir listamos as principais funcionalidades como uma lista de tópicos para 
 		\begin{itemize}
 			\item Criar conta;
 			\item Redefinir senha;
+			\item Autenticar-se no sistema;
 		\end{itemize}
-	\item Editar uma lista:
+		
+	\item Manipular uma lista:
 		\begin{itemize}
-			\item Adicionar item:
-				\begin{itemize}
-					\item Definir nome;
-					\item Definir quantidade;
-					\item Definir unidade de medida (un. ml, L etc.);
-					\item Definir medida;
-					\item Adicionar uma categoria:
-						\begin{itemize}
-							\item Criar nova categoria;
-						\end{itemize}
-					\item Adicionar um comentário;
-					\item Atribuir a um usuário (caso a lista tenha sido compartilhada e pelo menos um convite já tenha sido aceito);
-				\end{itemize}
+			\item Criar lista
+			\item Adicionar item;
 			\item Remover itens;
-			\item Convidar pessoas para a lista (apenas quem criou a lista):
-				\begin{itemize}
-					\item Enviar convite:
-						\begin{itemize}
-							\item Acompanhar \textit{status} (aceito ou pendente);
-							\item Remover convite;
-						\end{itemize}
-				\end{itemize}
 			\item Deletar uma lista;
 			\item Limpar uma lista;
 		\end{itemize}
+		
+	\item Configurar compartilhamento de lista: convidar pessoas para a lista (apenas quem criou a lista):
+		\begin{itemize}
+			\item Enviar convite:
+				\begin{itemize}
+					\item Acompanhar \textit{status} (aceito ou pendente);
+					\item Remover convite;
+				\end{itemize}
+		\end{itemize}
+		
 	\item Iniciar um carrinho de compras:
 		\begin{itemize}
 			\item Selecionar listas para compor o carrinho;
@@ -53,6 +46,7 @@ A seguir listamos as principais funcionalidades como uma lista de tópicos para 
 			\item Riscar itens;
 			\item Finalizar um carrinho de compras;
 		\end{itemize}
+		
 	\item Ver estatísticas:
 		\begin{itemize}
 			\item Selecionar uma lista e ver o total gasto naquela lista ao longo do tempo em um gráfico de linha:
@@ -65,59 +59,39 @@ A seguir listamos as principais funcionalidades como uma lista de tópicos para 
 					\item Selecionar uma lista, dentro da lista selecionada selecionar o produto para ver o histórico;
 				\end{itemize}
 		\end{itemize}
-\end{itemize}
-
-Para o \textit{Minimum Viable Product} (\label{sig:mvp}\hyperlink{s:mvp}{MVP}) vamos implementar as seguintes funcionalidades, as demais ficarão para o próximo semestre:
-
-\begin{itemize}
-	\item \textit{Login}:
+		
+	\item Cadastrar item
 		\begin{itemize}
-			\item Criar conta;
-			\item Redefinir senha;
-		\end{itemize}
-	\item Criar lista de compra:
-		\begin{itemize}
-			\item Atribuir um nome;
-			\item Atribuir uma descrição;
-			\item Importar uma lista anterior;
-		\end{itemize}
-	\item Editar uma lista:
-		\begin{itemize}
-			\item Adicionar item:
+			\item Caso um item não esteja disponível no banco de dados, será possível escanear o código de barras a fim de que, ao ler, consiga cadastrar os dados de modo automático;
+			\item Caso não queira escanear ou ainda o produto não haja código de barra, será possível cadastrar o produto manualmente através de um formulário:
 				\begin{itemize}
 					\item Definir nome;
 					\item Definir quantidade;
-					\item Definir unidade de medida (un., ml., L etc);
+					\item Definir unidade de medida (un. ml, L etc.);
 					\item Definir medida;
-					\item Adicionar a uma categoria:
+					\item Adicionar uma categoria:
 						\begin{itemize}
-							\item Criar uma nova categoria;
+							\item Criar nova categoria;
 						\end{itemize}
 					\item Adicionar um comentário;
 					\item Atribuir a um usuário (caso a lista tenha sido compartilhada e pelo menos um convite já tenha sido aceito);
 				\end{itemize}
-			\item Remover itens;
-			\item Convidar pessoas para a lista (apenas quem criou a lista):
-				\begin{itemize}
-					\item Enviar convite:
-						\begin{itemize}
-							\item Acompanhar  status (aceito ou pendente);
-							\item Remover convite;
-						\end{itemize}
-				\end{itemize}
-			\item Deletar uma lista;
-			\item Limpar uma lista;
 		\end{itemize}
-	\item Iniciar um carrinho de compras:
+		
+	\item Geolocalização
 		\begin{itemize}
-			\item Selecionar listas para compor o carrinho;
-			\item Informar o mercado onde a compra será realizada (será solicitado que o usuário insira o nome do mercado manualmente);
-			\item Exibir o valor total do carrinho;
-			\item Informar a quantidade que será efetivamente comprada naquele momento (o usuário pode ter planejado 10 unidades e apenas comprar 5 naquele momento);
-			\item Riscar itens;
-			\item Finalizar o carrinho de compras.
+			\item Caso o GPS esteja habilitado no celular do usuário, poderá registrar os dados básicos (latitude, longitude) a partir do GPS;
+			\item Caso o GPS esteja desabilitado, será perguntado manualmente os dados do local (cep, rua, cidade) para que seja possível buscar os dados de latitude e longitude.
 		\end{itemize}
 \end{itemize}
+
+\subsubsection{Organização: POC e MVP}
+
+Para a Prova de Conceito (POC), serão desenvolvidas as funcionalidades de login e manipulação da lista.
+
+Já para o \textit{Minimum Viable Product} (\label{sig:mvp}\hyperlink{s:mvp}{MVP}), serão implementadas as funcionalidades de lista compartilhada, cadastro de item por formulário e manipulação de carrinho de compras. 
+
+As demais funcionalidades de estatísticas, geolocalização e cadastro de item por código de barras ficarão alocadas para o próximo semestre.
 
 \subsubsection{Requisitos Funcionais}
 
