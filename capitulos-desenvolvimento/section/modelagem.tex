@@ -15,8 +15,8 @@ Todas as tabelas começam o prefixo ``tb\_''. Exemplo: tb\_usuario. Todas as col
 \begin{itemize}
 	\item \underline{Chaves Primárias e Estrangeiras}: Começam com ``id\_''. Exemplo: id\_user.
 	\item \underline{Dados de Texto}: Começam com ``st\_'', de string. Exemplo: st\_name.
-	\item \underline{Dados Numéricos}: Começam com ``dt\_'', de date. Exemplo: dt\_createdAt.
-	\item \underline{Dados de Texto}: Começam com ``nr\_'', de number. Exemplo: nr\_price.  
+	\item \underline{Dados de Data}: Começam com ``dt\_'', de date. Exemplo: dt\_createdAt.
+	\item \underline{Dados Numéricos}: Começam com ``nr\_'', de number. Exemplo: nr\_price.  
 		\item \underline{Dados Booleanos}: Começam com ``bl\_''. Exemplo: bl\_isActive.  
 	\item \underline{Enum}: Começam com ``en\_'', sendo que os enums serão tratados no backend. Exemplo: en\_status.  
 \end{itemize}
@@ -363,3 +363,5 @@ No Lixt, haverá serviços de apoio que auxiliarão a cumprir as regras de negó
 O primeiro serviço é o de autenticação e autorização, no qual será utilizado o OAuth2 para cumprir essa função. O OAuth2 garante a maior segurança, conseguindo permitir a utilização do sistema a partir do token que foi previamente registrado no sistema (impedindo a criação de token manualmente para acessar a plataforma). Para a autorização do usuário, será solicitado um bearer token. Além disso, garante a escalabilidade, visto que permite a autenticação de outras APIs a partir da geração o próprio token com as credenciais de clientID e secretID - gerando um basic token -, facilitando a integração entre APIs. Inclusive, para um uusário se autenticar com OAuth2, é necessário que o serviço que enviará a requisição possua seu próprio basic token, reforçando a segurança ao garantir que o sistema não estará disponível para ser acessado facilmente.
 
 O segundo serviço é o de email, que será implementado com javamail. Para esse serviço, será criada uma conta de gmail com as configurações habilitadas para enviar email de terceiros (ou seja, da nossa API).
+
+O terceiro serviço é o serviço de swagger, que documenta os endpoints do API (método HTTP, DTO requerido, DTO retornado e headers).

@@ -49,17 +49,17 @@
 \contentsline {subsubsection}{\numberline {3.6.4.1}\emph {Clean Code}}{35}{subsubsection.3.6.4.1}%
 \contentsline {subsubsection}{\numberline {3.6.4.2}\emph {SOLID}}{36}{subsubsection.3.6.4.2}%
 \contentsline {subsubsection}{\numberline {3.6.4.3}\emph {Gang Of Four}}{36}{subsubsection.3.6.4.3}%
-\contentsline {subsection}{\numberline {3.6.5}Testes}{36}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.5}Testes}{37}{subsection.3.6.5}%
 \contentsline {section}{\numberline {3.7}Segurança, Privacidade e Legislação}{37}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Viabilidade Financeira}{38}{section.3.8}%
 \contentsline {subsection}{\numberline {3.8.1}Gerenciamento de Custos}{38}{subsection.3.8.1}%
 \contentsline {subsubsection}{\numberline {3.8.1.1}Análise de Requisitos e Desenvolvimento}{38}{subsubsection.3.8.1.1}%
-\contentsline {subsubsection}{\numberline {3.8.1.2}Manutenções}{38}{subsubsection.3.8.1.2}%
+\contentsline {subsubsection}{\numberline {3.8.1.2}Manutenções}{39}{subsubsection.3.8.1.2}%
 \contentsline {subsection}{\numberline {3.8.2}Custos de deploy e de Ambiente de Produção}{39}{subsection.3.8.2}%
 \contentsline {subsubsection}{\numberline {3.8.2.1}Frontend}{39}{subsubsection.3.8.2.1}%
 \contentsline {subsubsection}{\numberline {3.8.2.2}Backend}{39}{subsubsection.3.8.2.2}%
 \contentsline {subsubsection}{\numberline {3.8.2.3}Banco de Dados}{39}{subsubsection.3.8.2.3}%
-\contentsline {subsection}{\numberline {3.8.3}Medidas de Obtenção de Retorno Financeiro}{39}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.3}Medidas de Obtenção de Retorno Financeiro}{40}{subsection.3.8.3}%
 \contentsline {subsection}{\numberline {3.8.4}Conclusão}{40}{subsection.3.8.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Planejamento e Gerenciamento do Projeto}}{41}{chapter.4}%
