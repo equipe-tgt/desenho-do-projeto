@@ -10,16 +10,6 @@
 {ADJUTO, G. Celular é o principal meio de acesso à internet no país.
 \emph{Agência Brasil}, 2018.}
 
-\bibitem[Amazon 2021]{AmazonRDS}
-\abntrefinfo{Amazon}{AMAZON}{2021a}
-{AMAZON. Amazon rds on vmware pricing.
-2021.}
-
-\bibitem[Amazon 2021]{AmazonEC2}
-\abntrefinfo{Amazon}{AMAZON}{2021b}
-{AMAZON. Preço sob demanda do amazon ec2.
-2021.}
-
 \bibitem[Angelo 2003]{ComprasNaoPlanejadas}
 \abntrefinfo{Angelo}{ANGELO}{2003}
 {ANGELO, C. As compras não planejadas em supermercados: a importância do
@@ -54,11 +44,6 @@ Dispon{\'\i}vel em:
 \abntrefinfo{CONLEY}{CONLEY}{2007}
 {CONLEY, K. Towel: Towards an intelligent to-do list.
 \emph{AAAI ORGANIZATION}, 2007.}
-
-\bibitem[Google 2021]{GoogleAdMob}
-\abntrefinfo{Google}{GOOGLE}{2021}
-{GOOGLE. Quanto é possível lucrar com a admob.
-2021.}
 
 \bibitem[Lamba 2019]{anilLamba}
 \abntrefinfo{Lamba}{LAMBA}{2019}
