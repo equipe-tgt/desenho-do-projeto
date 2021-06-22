@@ -33,7 +33,7 @@ configuração de tarefas, também chamada de \emph{jobs}, que facilitam
 a implantação do sistema.
 
 O diagrama \ref{fig:jenkins} ilustra o funcionamento da ferramenta:
-\begin{enum}
+\begin{enumerate}
 \item uma instância dela, rodando no ambiente AWS tem acesso ao código no
 github;
 \item no momento do \gls{deploy}, a instância, rodando em uma máquina
@@ -44,7 +44,7 @@ github;
   secundária, como histórico das versões da aplicação;
 \item pr fim, na máquina virtual final, onde o sistema será
   implantado, a imnagem é copiada e iniciada.
-\end{enum}
+\end{enumerate}
 Vale notar que, quando o \emph{deploy} é realizado, uma instância só é
 derrubada quando uma nova instância, de uma nova versão, está
 plenamente operante.
