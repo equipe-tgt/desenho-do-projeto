@@ -28,10 +28,33 @@ problemas sejam rapidamente identificados, analisados e resolvidos.
 
 Visando manter o serviço sempre atualizado para o usuário, a
 ferramenta de integração contínua Jenkins foi selecionada para a
-implantação da aplicação \gls{backend} em produção. Ela
-permite, a partir do código no repositório git, a execução de testes,
-o build e o \gls{deploy} para o ambiente de produção, automatizando tarefas
-complicadas de se executar em máquinas remotas.
+implantação da aplicação \gls{backend} em produção. Ela permite a
+configuração de tarefas, também chamada de \emph{jobs}, que facilitam
+a implantação do sistema.
+
+O diagrama \ref{fig:jenkins} ilustra o funcionamento da ferramenta:
+\begin{enum}
+\item uma instância dela, rodando no ambiente AWS tem acesso ao código no
+github;
+\item no momento do \gls{deploy}, a instância, rodando em uma máquina
+  virtual cria um processo filho, que realiza o \emph{checkout} do
+  código fonte no Github, executa testes e o \emph{build} da
+  aplicação;
+\item uma cópia deste \emph{build} é salva em uma máquina virtual
+  secundária, como histórico das versões da aplicação;
+\item pr fim, na máquina virtual final, onde o sistema será
+  implantado, a imnagem é copiada e iniciada.
+\end{enum}
+Vale notar que, quando o \emph{deploy} é realizado, uma instância só é
+derrubada quando uma nova instância, de uma nova versão, está
+plenamente operante.
+
+\begin{figure}
+  \centering
+  \caption{Diagrama ilustrando o processo de \emph{deploy}.}
+  \includegraphics{deploy}
+  \label{fig:jenkins}
+\end{figure}
 
 Para o \gls{frontend}, no entanto, não existem ferramentas de
 integração contínua, uma vez que as imagens do aplicativo mobile

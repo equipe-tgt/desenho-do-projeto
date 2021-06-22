@@ -3,7 +3,7 @@
 
 % ATENCAO o SHARELATEX GERA O GLOSSARIO/LISTAS DE SIGLAS SOMENTE UMA VEZ
 % CASO SEJA FEITA ALGUMA ALTERAÇÃO NA LISTA DE SIGLAS OU GLOSSARIO É NECESSARIO UTILIZAR A OPÇÃO :
-% "Clear Cached Files" DISPONIVEL NA VISUALIZAÇÃO DOS LOGS 
+% "Clear Cached Files" DISPONIVEL NA VISUALIZAÇÃO DOS LOGS
 % ---
 % https://www.sharelatex.com/learn/Glossaries
 
@@ -77,7 +77,7 @@
     name={product backlog},
     description={Lista de todos os requisitos e funcionalidades desejadas para um produto.}
 }
-     
+
 \newglossaryentry{framework} {
     name=framework,
     description={Conjunto de ações e estratégias que possuem um ojeto e objetivo em específico;
@@ -86,20 +86,35 @@
     qual uma aplicação pdoe ser contruída. Ex: o framework web Spring
     asbtrai a lógica de implementação de um servidor, auxiliando a
     criação de endpoints, rotas e processamento de HTTP.}
-}     
-      
+}
+
+\newglossaryentry{load balacing}{
+  name={load balancing},
+  description={Processo de equilibrar requisições que chegam ao
+    back-end entre as diversas instâncias que o compõe, evitando que
+    uma instância seja sobrecarregada com requisições.}
+}
+
+\newglossaryentry{proxy}{
+  name={proxy},
+  description={Intermediário entre um cliente e um servidor. Quando
+    usado como ``proxy reverso'', significa um ponto pelo qual passam
+    todas as requisições que chegam a uma subrede.}
+}
+
+
 \newglossaryentry{planning} {
     name={sprint planning},
     description={Cerimônia do Scrum que ocorre antes do início
     de uma nova Sprint com o objetivo de planejar quais histórias
     de usuário serão desenvolvidas naquela iteração.}
-}  
+}
 
 \newglossaryentry{review} {
     name={sprint review},
     description={Cerimônia do Scrum que ocorre no fim da Sprint
     com o objetivo de validar as entregas daquele período.}
-}      
+}
 
 \newglossaryentry{retrospective} {
     name={sprint retrospective},
@@ -107,5 +122,5 @@
     o objetivo de avaliar os pontos positivos e negativos
     da Sprint, agrupando possibilidades de melhorias
     para a próxima Sprint.}
-}                    
-% Normalmente somente as palavras referenciadas são impressas no glossario, portanto é necessário referenciar utilizando \gls{identificação}                
+}
+% Normalmente somente as palavras referenciadas são impressas no glossario, portanto é necessário referenciar utilizando \gls{identificação}
