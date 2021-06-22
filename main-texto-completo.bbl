@@ -10,6 +10,12 @@
 {ADJUTO, G. Celular é o principal meio de acesso à internet no país.
 \emph{Agência Brasil}, 2018.}
 
+\bibitem[Almeida 2020]{NielsenBrasil}
+\abntrefinfo{Almeida}{ALMEIDA}{2020}
+{ALMEIDA, C. Confinadas em razão da pandemia, famílias mudam hábitos e
+  compram mais alimentos.
+\emph{O Globo}, 2020.}
+
 \bibitem[Angelo 2003]{ComprasNaoPlanejadas}
 \abntrefinfo{Angelo}{ANGELO}{2003}
 {ANGELO, C. As compras não planejadas em supermercados: a importância do
@@ -20,6 +26,17 @@
 \abntrefinfo{Aniche}{ANICHE}{2014}
 {ANICHE, M. Test driven development.
 2014.}
+
+\bibitem[APAS 2018]{PesquisaAPAS}
+\abntrefinfo{APAS}{APAS}{2018a}
+{APAS. Destaques da pesquisa tendência do consumidor apas/ibope.
+\emph{APAS Show}, 2018.}
+
+\bibitem[APAS 2018]{APAS}
+\abntrefinfo{APAS}{APAS}{2018b}
+{APAS. Pesquisa mostra tendências e comportamento do consumidor de
+  supermercado.
+\emph{APAS Show}, 2018.}
 
 \bibitem[Au 2013]{GroceryList}
 \abntrefinfo{Au}{AU}{2013}
@@ -34,6 +51,24 @@ Dispon{\'\i}vel em:
   \url{http://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2018/lei/l13709.htm}.
   Acesso em: 7 jun. 2021.}
 
+\bibitem[Brasil 2015]{SPC}
+\abntrefinfo{Brasil}{BRASIL}{2015}
+{BRASIL, S. 33% das compras feitas por impulso são de supermercado, apontam
+  spc brasil e cndl.
+2015.}
+
+\bibitem[Brasil 2019]{MetaFinanceiraSPC}
+\abntrefinfo{Brasil}{BRASIL}{2019}
+{BRASIL, S. Guardar dinheiro é a principal meta financeira do brasileiro para
+  2020, mostra pesquisa cndl/spc brasil.
+\emph{SPC Brasil}, 2019.}
+
+\bibitem[Brasil 2020]{DespesaSPC}
+\abntrefinfo{Brasil}{BRASIL}{2020}
+{BRASIL, S. Em cada dez brasileiros, apenas um tem renda suficiente para pagar
+  despesas de início de ano, mostra pesquisa cndl/spc brasil.
+\emph{SPC Brasil}, 2020.}
+
 \bibitem[COLELLA 2015]{PlanejamentoFinanceiroFamiliar}
 \abntrefinfo{COLELLA}{COLELLA}{2015}
 {COLELLA, M.~T. Planejamento financeiro familiar: A importância da
@@ -45,10 +80,22 @@ Dispon{\'\i}vel em:
 {CONLEY, K. Towel: Towards an intelligent to-do list.
 \emph{AAAI ORGANIZATION}, 2007.}
 
+\bibitem[Consumo 2021]{Asserj}
+\abntrefinfo{Consumo}{CONSUMO}{2021}
+{CONSUMO, M. e. Consumidor só enche o carrinho do supermercado uma vez no
+  mês.
+\emph{Mercado e Consumo}, 2021.}
+
 \bibitem[Couto 2014]{TeoriasConsumidor}
 \abntrefinfo{Couto}{COUTO}{2014}
 {COUTO, D. Comportamento de compra e consumo.
 2014.}
+
+\bibitem[Filgueiras 2019]{Endividados}
+\abntrefinfo{Filgueiras}{FILGUEIRAS}{2019}
+{FILGUEIRAS, I. Endividados têm 4 vezes mais chances de ter depressão e 8
+  vezes mais de não dormir bem.
+\emph{Valor investe}, 2019.}
 
 \bibitem[Lamba 2019]{anilLamba}
 \abntrefinfo{Lamba}{LAMBA}{2019}
@@ -60,6 +107,12 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Melhoramentos}{MELHORAMENTOS}{2021}
 {MELHORAMENTOS, E. Organização.
 \emph{UOL}, 2021.}
+
+\bibitem[Muniz 2017]{Akatu}
+\abntrefinfo{Muniz}{MUNIZ}{2017}
+{MUNIZ, C. Quase 30% das compras de mercado vão para o lixo; veja como
+  economizar.
+\emph{UOL}, 2017.}
 
 \bibitem[PADMANABHAN 2020]{Devopedia2020}
 \abntrefinfo{PADMANABHAN}{PADMANABHAN}{2020}
@@ -76,5 +129,11 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Sun{ }Microsystems}{SUN{ }MICROSYSTEMS}{1997}
 {SUN{ }MICROSYSTEMS, I. Java coding conventions.
 1997.}
+
+\bibitem[Tecchio 2020]{Dotz}
+\abntrefinfo{Tecchio}{TECCHIO}{2020}
+{TECCHIO, M. Em isolamento, brasileiro vai menos ao mercado e compra o básico,
+  mostra estudo.
+\emph{CNN Business}, 2020.}
 
 \end{thebibliography}

@@ -7,70 +7,70 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdução}}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Contextualização}{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Problematização}{9}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Justificativa}{10}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Objetivos}{10}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Análise da Concorrência}{11}{section.1.5}%
+\contentsline {section}{\numberline {1.2}Problematização}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Justificativa}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Objetivos}{13}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Análise da Concorrência}{13}{section.1.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Revisão Bibliográfica}}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Organização financeira}{13}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Listas}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Teoria do Comportamento do Consumidor}{14}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Aplicativo \textit {Mobile}}{15}{section.2.4}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Revisão Bibliográfica}}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Organização financeira}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Listas}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Teoria do Comportamento do Consumidor}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Aplicativo \textit {Mobile}}{17}{section.2.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento da Aplicação}}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Arquitetura}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Escopo do Projeto}{18}{section.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.0.1}Organização: POC e MVP}{21}{subsubsection.3.2.0.1}%
-\contentsline {subsubsection}{\numberline {3.2.0.2}Requisitos Funcionais}{21}{subsubsection.3.2.0.2}%
-\contentsline {subsubsection}{\numberline {3.2.0.3}Requisitos Não Funcionais}{22}{subsubsection.3.2.0.3}%
-\contentsline {section}{\numberline {3.3}Tecnologias Utilizadas}{23}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Linguagens}{23}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Back-end}{23}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Mobile}{24}{subsubsection.3.3.1.2}%
-\contentsline {subsection}{\numberline {3.3.2}Frameworks e ORMs}{24}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Back-end}{24}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Mobile}{24}{subsubsection.3.3.2.2}%
-\contentsline {subsection}{\numberline {3.3.3}Banco de dados}{24}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Gerenciamento de tarefas}{25}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Versionamento}{25}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Modelagem e Definições Técnicas}{25}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Modelo Entidade-Relacionamento (MER)}{25}{subsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.1}Padrões de Banco de Dados}{25}{subsubsection.3.4.1.1}%
-\contentsline {subsubsection}{\numberline {3.4.1.2}Apresentação do MER}{26}{subsubsection.3.4.1.2}%
-\contentsline {subsubsection}{\numberline {3.4.1.3}Definição de Índices}{27}{subsubsection.3.4.1.3}%
-\contentsline {subsubsection}{\numberline {3.4.1.4}Dicionário de Dados}{27}{subsubsection.3.4.1.4}%
-\contentsline {subsection}{\numberline {3.4.2}Padrão Arquitetural}{32}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Serviços de Apoio}{33}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Manutenibilidade da aplicação}{34}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}\emph {Logs}}{34}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Integração Contínua}{34}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}\emph {Code Conventions}}{35}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}\emph {Designs Patterns}}{37}{subsection.3.5.4}%
-\contentsline {subsubsection}{\numberline {3.5.4.1}\emph {Clean Code}}{37}{subsubsection.3.5.4.1}%
-\contentsline {subsubsection}{\numberline {3.5.4.2}\emph {SOLID}}{37}{subsubsection.3.5.4.2}%
-\contentsline {subsubsection}{\numberline {3.5.4.3}\emph {Gang Of Four}}{38}{subsubsection.3.5.4.3}%
-\contentsline {subsection}{\numberline {3.5.5}Testes}{38}{subsection.3.5.5}%
-\contentsline {section}{\numberline {3.6}Escalabilidade}{39}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Segurança, Privacidade e Legislação}{40}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Viabilidade Financeira}{41}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Gerenciamento de Custos}{41}{subsection.3.8.1}%
-\contentsline {subsubsection}{\numberline {3.8.1.1}Análise de Requisitos e Desenvolvimento}{42}{subsubsection.3.8.1.1}%
-\contentsline {subsubsection}{\numberline {3.8.1.2}Manutenções}{42}{subsubsection.3.8.1.2}%
-\contentsline {subsection}{\numberline {3.8.2}Custos de deploy e de Ambiente de Produção}{42}{subsection.3.8.2}%
-\contentsline {subsubsection}{\numberline {3.8.2.1}Frontend}{42}{subsubsection.3.8.2.1}%
-\contentsline {subsubsection}{\numberline {3.8.2.2}Backend}{42}{subsubsection.3.8.2.2}%
-\contentsline {subsubsection}{\numberline {3.8.2.3}Banco de Dados}{42}{subsubsection.3.8.2.3}%
-\contentsline {subsection}{\numberline {3.8.3}Medidas de Obtenção de Retorno Financeiro}{43}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}Conclusão}{43}{subsection.3.8.4}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento da Aplicação}}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Arquitetura}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Escopo do Projeto}{20}{section.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.0.1}Organização: POC e MVP}{23}{subsubsection.3.2.0.1}%
+\contentsline {subsubsection}{\numberline {3.2.0.2}Requisitos Funcionais}{23}{subsubsection.3.2.0.2}%
+\contentsline {subsubsection}{\numberline {3.2.0.3}Requisitos Não Funcionais}{24}{subsubsection.3.2.0.3}%
+\contentsline {section}{\numberline {3.3}Tecnologias Utilizadas}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Linguagens}{25}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Back-end}{25}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Mobile}{26}{subsubsection.3.3.1.2}%
+\contentsline {subsection}{\numberline {3.3.2}Frameworks e ORMs}{26}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Back-end}{26}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Mobile}{26}{subsubsection.3.3.2.2}%
+\contentsline {subsection}{\numberline {3.3.3}Banco de dados}{26}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Gerenciamento de tarefas}{27}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Versionamento}{27}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Modelagem e Definições Técnicas}{27}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Modelo Entidade-Relacionamento (MER)}{27}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Padrões de Banco de Dados}{27}{subsubsection.3.4.1.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.2}Apresentação do MER}{28}{subsubsection.3.4.1.2}%
+\contentsline {subsubsection}{\numberline {3.4.1.3}Definição de Índices}{29}{subsubsection.3.4.1.3}%
+\contentsline {subsubsection}{\numberline {3.4.1.4}Dicionário de Dados}{29}{subsubsection.3.4.1.4}%
+\contentsline {subsection}{\numberline {3.4.2}Padrão Arquitetural}{34}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Serviços de Apoio}{35}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Manutenibilidade da aplicação}{36}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}\emph {Logs}}{36}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Integração Contínua}{36}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}\emph {Code Conventions}}{37}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}\emph {Designs Patterns}}{39}{subsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.1}\emph {Clean Code}}{39}{subsubsection.3.5.4.1}%
+\contentsline {subsubsection}{\numberline {3.5.4.2}\emph {SOLID}}{39}{subsubsection.3.5.4.2}%
+\contentsline {subsubsection}{\numberline {3.5.4.3}\emph {Gang Of Four}}{40}{subsubsection.3.5.4.3}%
+\contentsline {subsection}{\numberline {3.5.5}Testes}{40}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}Escalabilidade}{41}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Segurança, Privacidade e Legislação}{42}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Viabilidade Financeira}{43}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Gerenciamento de Custos}{43}{subsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.1.1}Análise de Requisitos e Desenvolvimento}{44}{subsubsection.3.8.1.1}%
+\contentsline {subsubsection}{\numberline {3.8.1.2}Manutenções}{44}{subsubsection.3.8.1.2}%
+\contentsline {subsection}{\numberline {3.8.2}Custos de deploy e de Ambiente de Produção}{44}{subsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}Frontend}{44}{subsubsection.3.8.2.1}%
+\contentsline {subsubsection}{\numberline {3.8.2.2}Backend}{44}{subsubsection.3.8.2.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.3}Banco de Dados}{44}{subsubsection.3.8.2.3}%
+\contentsline {subsection}{\numberline {3.8.3}Medidas de Obtenção de Retorno Financeiro}{45}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Conclusão}{45}{subsection.3.8.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Planejamento e Gerenciamento do Projeto}}{44}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Metodologia de Gestão e Desenvolvimento de Projeto}{44}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Organização da Equipe}{44}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Gestão de Tempo}{45}{section.4.3}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Planejamento e Gerenciamento do Projeto}}{46}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Metodologia de Gestão e Desenvolvimento de Projeto}{46}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Organização da Equipe}{46}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Gestão de Tempo}{47}{section.4.3}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{46}{section*.12}%
-\contentsline {chapter}{GLOSSÁRIO}{46}{section*.12}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{48}{section*.12}%
+\contentsline {chapter}{GLOSSÁRIO}{49}{section*.12}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}

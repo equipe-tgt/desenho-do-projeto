@@ -1,13 +1,12 @@
-\contentsline {quadro}{\numberline {1}{\ignorespaces \ref {quadro-concorrentes}: Uma comparação dos aplicativos concorrentes.}}{12}{quadro.1.1}%
-\contentsline {quadro}{\numberline {2}{\ignorespaces Requisitos funcionais}}{22}{quadro.3.2}%
-\contentsline {quadro}{\numberline {3}{\ignorespaces Requisitos Não funcionais}}{23}{quadro.3.3}%
-\contentsline {quadro}{\numberline {4}{\ignorespaces Dicionário de Dados: tb\_user}}{28}{quadro.3.4}%
-\contentsline {quadro}{\numberline {5}{\ignorespaces Dicionário de Dados: tb\_list}}{28}{quadro.3.5}%
-\contentsline {quadro}{\numberline {6}{\ignorespaces Dicionário de Dados: tb\_listMembers}}{28}{quadro.3.6}%
-\contentsline {quadro}{\numberline {7}{\ignorespaces Dicionário de Dados: tb\_category}}{29}{quadro.3.7}%
-\contentsline {quadro}{\numberline {8}{\ignorespaces Dicionário de Dados: tb\_product}}{29}{quadro.3.8}%
-\contentsline {quadro}{\numberline {9}{\ignorespaces Dicionário de Dados: tb\_purchaseLocal}}{29}{quadro.3.9}%
-\contentsline {quadro}{\numberline {10}{\ignorespaces Dicionário de Dados: tb\_purchase}}{30}{quadro.3.10}%
-\contentsline {quadro}{\numberline {11}{\ignorespaces Dicionário de Dados: tb\_itemOfPurchase}}{30}{quadro.3.11}%
-\contentsline {quadro}{\numberline {12}{\ignorespaces Dicionário de Dados: tb\_productOfList}}{31}{quadro.3.12}%
-\contentsline {quadro}{\numberline {13}{\ignorespaces Dicionário de Dados: tb\_comment}}{32}{quadro.3.13}%
+\contentsline {quadro}{\numberline {1}{\ignorespaces Requisitos funcionais}}{24}{quadro.3.1}%
+\contentsline {quadro}{\numberline {2}{\ignorespaces Requisitos Não funcionais}}{25}{quadro.3.2}%
+\contentsline {quadro}{\numberline {3}{\ignorespaces Dicionário de Dados: tb\_user}}{30}{quadro.3.3}%
+\contentsline {quadro}{\numberline {4}{\ignorespaces Dicionário de Dados: tb\_list}}{30}{quadro.3.4}%
+\contentsline {quadro}{\numberline {5}{\ignorespaces Dicionário de Dados: tb\_listMembers}}{30}{quadro.3.5}%
+\contentsline {quadro}{\numberline {6}{\ignorespaces Dicionário de Dados: tb\_category}}{31}{quadro.3.6}%
+\contentsline {quadro}{\numberline {7}{\ignorespaces Dicionário de Dados: tb\_product}}{31}{quadro.3.7}%
+\contentsline {quadro}{\numberline {8}{\ignorespaces Dicionário de Dados: tb\_purchaseLocal}}{31}{quadro.3.8}%
+\contentsline {quadro}{\numberline {9}{\ignorespaces Dicionário de Dados: tb\_purchase}}{32}{quadro.3.9}%
+\contentsline {quadro}{\numberline {10}{\ignorespaces Dicionário de Dados: tb\_itemOfPurchase}}{32}{quadro.3.10}%
+\contentsline {quadro}{\numberline {11}{\ignorespaces Dicionário de Dados: tb\_productOfList}}{33}{quadro.3.11}%
+\contentsline {quadro}{\numberline {12}{\ignorespaces Dicionário de Dados: tb\_comment}}{34}{quadro.3.12}%

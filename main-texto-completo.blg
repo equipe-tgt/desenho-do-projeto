@@ -16,6 +16,11 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
+I was expecting a `,' or a `}'---line 170 of file referencias.bib
+ : 
+ : @Article{PesquisaAPAS,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "GoogleAdMob"
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
@@ -26,45 +31,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 16 entries,
+You've used 26 entries,
             6714 wiz_defined-function locations,
-            1277 strings with 11207 characters,
-and the built_in function-call counts, 9457 in all, are:
-= -- 777
-> -- 198
+            1327 strings with 13337 characters,
+and the built_in function-call counts, 14550 in all, are:
+= -- 1036
+> -- 348
 < -- 74
-+ -- 185
-- -- 68
-* -- 556
-:= -- 1389
-add.period$ -- 41
-call.type$ -- 17
-change.case$ -- 99
-chr.to.int$ -- 26
-cite$ -- 13
-duplicate$ -- 602
-empty$ -- 736
-format.name$ -- 299
-if$ -- 2065
-int.to.chr$ -- 2
++ -- 236
+- -- 118
+* -- 892
+:= -- 2178
+add.period$ -- 71
+call.type$ -- 27
+change.case$ -- 169
+chr.to.int$ -- 35
+cite$ -- 23
+duplicate$ -- 892
+empty$ -- 1186
+format.name$ -- 529
+if$ -- 3184
+int.to.chr$ -- 3
 int.to.str$ -- 3
-missing$ -- 239
-newline$ -- 73
-num.names$ -- 65
-pop$ -- 303
+missing$ -- 399
+newline$ -- 123
+num.names$ -- 115
+pop$ -- 505
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 78
 quote$ -- 0
-skip$ -- 790
+skip$ -- 1089
 stack$ -- 1
-substring$ -- 340
-swap$ -- 178
+substring$ -- 510
+swap$ -- 257
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 80
+while$ -- 140
 width$ -- 0
-write$ -- 188
-(There was 1 warning)
+write$ -- 327
+(There was 1 error message)
