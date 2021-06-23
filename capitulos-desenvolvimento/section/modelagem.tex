@@ -1,10 +1,10 @@
 \section{Modelagem e Definições Técnicas}
 
-Nesse tópicos, serão abordados os diagramas e modelagens necessários para o desenvolvimento do projeto Lixt. Além disso, serão apresentadas as definições técnicas necessárias para o prosseguimento do projeto.
+Nesse tópico, serão abordados os diagramas e modelagens necessários para o desenvolvimento do projeto Lixt. Além disso, serão apresentadas as definições técnicas necessárias para o prosseguimento do projeto.
 
 \subsection{Modelo Entidade-Relacionamento (MER)}
 
-O Modelo Entidade-Relacionamento (MER) é a primeira abstração do banco de dados, no qual é modelado e estruturado a forma no qual os dados serão trabalhados, persistidos e buscados.
+O Modelo Entidade-Relacionamento (MER) é a primeira abstração do banco de dados, no qual é modelado e estruturado a forma que os dados serão trabalhados, persistidos e buscados.
 
 \subsubsection{Padrões de Banco de Dados}
 
@@ -42,7 +42,7 @@ Na \autoref{fig:mer} está explicitado o MER proposto para a aplicação Lixt, s
   \legend{Fonte: Os autores}
 \end{figure}
 
-No diagrama, uma lista (tb\_list) possui vários usuário (tb\_user), e um usuário pode estar em várias listas, surgindo assim a necessidade da tabela intermediária (tb\_listMembers). Essa tabela intermediária possui um status, que pode ser ``Aceitado'', ``Rejeitado'' e ``Aguardando Confirmação''.
+No diagrama, uma lista (tb\_list) possui vários usuários (tb\_user), e um usuário pode estar em várias listas, surgindo assim a necessidade da tabela intermediária (tb\_listMembers). Essa tabela intermediária possui um status, que pode ser ``Aceitado'', ``Rejeitado'' e ``Aguardando Confirmação''.
 
 Um usuário pode fazer vários comentários (tb\_comment) no produto da lista (tb\_productOnList), e um comentário é de um usuário.
 
@@ -60,11 +60,11 @@ No MySQL, temos dois tipos de índices:
 	\item \underline{Índice Secundário}: Criado e manipulado durante a modelagem para otimização de queries.
 \end{enumerate}	
 
-Nesse sentido, foram definidos índices secundários para as chaves estrangeiras (foreign key - FK) e para as colunas que no qual serão buscada no frontend por meio de campos de busca.
+Nesse sentido, foram definidos índices secundários para as chaves estrangeiras (foreign key - FK) e para as colunas que no qual serão buscadas no frontend através de campos de busca.
 
 \subsubsection{Dicionário de Dados}
 
-O dicionário de dados é um suporte ao MER, descrevendo todas os dados, restriçõe e fornecendo breves descrições de cada campo de cada tabela.
+O dicionário de dados é um suporte ao MER, descrevendo todos os dados, restriçõe e fornecendo breves descrições de cada campo de cada tabela.
 
 Antes de tudo, foi criado siglas para simplificar os dicionários de dados apresentados: Chave Primária (PK), Chave Estrangeira (FK), Not Null (NN) e Unique (UQ). Lembrando também que toda PK é automaticamente NN, UQ e indexado.
 
