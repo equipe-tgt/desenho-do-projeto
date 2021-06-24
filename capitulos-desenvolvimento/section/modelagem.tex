@@ -4,7 +4,7 @@ Nesse tópico, serão abordados os diagramas e modelagens necessários para o de
 
 \subsection{Modelo Entidade-Relacionamento (MER)}
 
-O Modelo Entidade-Relacionamento (MER) é a primeira abstração do banco de dados, no qual é modelado e estruturado a forma que os dados serão trabalhados, persistidos e buscados.
+O \gls{mer} é a primeira abstração do banco de dados, no qual é modelado e estruturado a forma que os dados serão trabalhados, persistidos e buscados.
 
 \subsubsection{Padrões de Banco de Dados}
 
@@ -32,7 +32,7 @@ Quanto aos índices e restrições, é definido o uso dos seguintes prefixos pre
 
 \subsubsection{Apresentação do MER}
 
-Na \autoref{fig:mer} está explicitado o MER proposto para a aplicação Lixt, sendo um diagrama normalizado e com as boas práticas aplicadas.
+Na \autoref{fig:mer} está explicitado o \gls{mer} proposto para a aplicação Lixt, sendo um diagrama normalizado e com as boas práticas aplicadas.
 
 \begin{figure}[H]
   \centering
@@ -64,7 +64,7 @@ Nesse sentido, foram definidos índices secundários para as chaves estrangeiras
 
 \subsubsection{Dicionário de Dados}
 
-O dicionário de dados é um suporte ao MER, descrevendo todos os dados, restriçõe e fornecendo breves descrições de cada campo de cada tabela.
+O dicionário de dados é um suporte ao \gls{mer}, descrevendo todos os dados, restriçõe e fornecendo breves descrições de cada campo de cada tabela.
 
 Antes de tudo, foi criado siglas para simplificar os dicionários de dados apresentados: Chave Primária (PK), Chave Estrangeira (FK), Not Null (NN) e Unique (UQ). Lembrando também que toda PK é automaticamente NN, UQ e indexado.
 
@@ -326,7 +326,7 @@ Antes de tudo, foi criado siglas para simplificar os dicionários de dados apres
     \hline
     st\_content & VARCHAR(200) & NN &  & Campo obrigatório que armazena o comentário feito ao produto \\
     \hline
-    dt\_createdAt & INT & NN &  & Campo obrigatório que armazena a data no qual o comentário foi realizado \\
+    dt\_createdAt & DATE & NN &  & Campo obrigatório que armazena a data no qual o comentário foi realizado \\
     \hline
 \end{tabular}
 \legend{Fonte: Os autores}
@@ -344,15 +344,15 @@ A arquitetura escolhida para o desenvolvimento do Lixt foi cliente-servidor (com
   \legend{Fonte: Os autores}
 \end{figure}
 
-O cliente, que é uma aplicação mobile para Android, realizará requisições ao backend e, assim, conseguir operar suas funcionalidades e exibir os dados no layout de modo coerente no aplicativo.
+O cliente, que é uma aplicação mobile para Android, realizará requisições ao \gls{backend} e, assim, conseguir operar suas funcionalidades e exibir os dados no layout de modo coerente no aplicativo.
 
 O servidor, por sua vez, será dividida em camadas lógicas. A camada que será exposta e acessível para o frontend são os endpoints dos controllers, recebendo e retornando DTOs (padrão Data Transfer Object) em formato JSON. Após acessar o endpoint, caso esteja devidamente autenticado no OAuth2 e com o token de autorização, será chamado o mapper, responsável por converter DTO em model.
 
-Após essa conversão, dependendo da complexidade da regra de negócio, pode chamar o service - para regras de negócios simple -  ou um facade - responsável por encapsular regras de negócios complexas, chamando os services a fim de evitar injeção de dependência cruzada entre os services. 
+Após essa conversão, dependendo da complexidade da regra de negócio, pode chamar o service - para regras de negócios simples -  ou um facade - responsável por encapsular regras de negócios complexas, chamando os services a fim de evitar injeção de dependência cruzada entre os services. 
 
-Os services, por sua vez, encapsulam as operações de CRUD do hibernate que são definidas nas Repositories.
+Os services, por sua vez, encapsulam as operações de \gls{crud} do Hibernate que são definidas nas Repositories.
 
-Após a realização da requisição, será enviada uma resposta para o frontend, onde o mapper, dessa vez, irá converter o model em DTO, de modo que consiga tratar o dado a partir de formatações, retirada de dados sensíveis e garantindo maior performance ao enviar apenas os dados que serão devidamente utilizados (e não dados em excesso), garantindo menor dados em tráfego na rede, menor consumo de internet e maior velocidade.
+Após a realização da requisição, será enviada uma resposta para o \gls{frontend}, onde o mapper, dessa vez, irá converter o model em DTO, de modo que consiga tratar o dado a partir de formatações, retirada de dados sensíveis e garantindo maior performance ao enviar apenas os dados que serão devidamente utilizados (e não dados em excesso), garantindo menor dados em tráfego na rede, menor consumo de internet e maior velocidade.
 
 O OAuth2 é o serviço de autenticação e autorização adotado que irá se aproveitar dos services para realizar a verificação das credenciais fornecidas no momento do login.
 
@@ -364,8 +364,8 @@ O backend será hospedado no Amazon EC2 e o banco de dados MySQL estará dispon�
 
 No Lixt, haverá serviços de apoio que auxiliarão a cumprir as regras de negócios. 
 
-O primeiro serviço é o de autenticação e autorização, no qual será utilizado o OAuth2 para cumprir essa função. O OAuth2 garante a maior segurança, conseguindo permitir a utilização do sistema a partir do token que foi previamente registrado no sistema (impedindo a criação de token manualmente para acessar a plataforma). Para a autorização do usuário, será solicitado um bearer token. Além disso, garante a escalabilidade, visto que permite a autenticação de outras APIs a partir da geração o próprio token com as credenciais de clientID e secretID - gerando um basic token -, facilitando a integração entre APIs. Inclusive, para um uusário se autenticar com OAuth2, é necessário que o serviço que enviará a requisição possua seu próprio basic token, reforçando a segurança ao garantir que o sistema não estará disponível para ser acessado facilmente.
+O primeiro serviço é o de autenticação e autorização, no qual será utilizado o OAuth2 para cumprir essa função. O OAuth2 garante a maior segurança, conseguindo permitir a utilização do sistema a partir do token que foi previamente registrado no sistema (impedindo a criação de token manualmente para acessar a plataforma). Para a autorização do usuário, será solicitado um bearer token. Além disso, garante a escalabilidade, visto que permite a autenticação de outras \glspl{API} a partir da geração o próprio token com as credenciais de clientID e secretID - gerando um basic token -, facilitando a integração entre \glspl{API}. Inclusive, para um uusário se autenticar com OAuth2, é necessário que o serviço que enviará a requisição possua seu próprio basic token, reforçando a segurança ao garantir que o sistema não estará disponível para ser acessado facilmente.
 
-O segundo serviço é o de email, que será implementado com javamail. Para esse serviço, será criada uma conta de gmail com as configurações habilitadas para enviar email de terceiros (ou seja, da nossa API).
+O segundo serviço é o de email, que será implementado com javamail. Para esse serviço, será criada uma conta de gmail com as configurações habilitadas para enviar email de terceiros (ou seja, da nossa \gls{API}).
 
-O terceiro serviço é o serviço de swagger, que documenta os endpoints do API (método HTTP, DTO requerido, DTO retornado e headers).
+O terceiro serviço é o serviço de swagger, que documenta os endpoints do \gls{API} (método HTTP, DTO requerido, DTO retornado e headers).

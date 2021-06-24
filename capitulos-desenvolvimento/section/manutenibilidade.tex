@@ -13,7 +13,7 @@ Como forma de monitorar a aplicação em tempo de execução,
 especialmente na camada de servidor, \emph{logs} serão usados para
 registrar o estado dos objetos. A ferramenta Log4j será usada, uma vez
 que os membros da equipe já tem mais familiaridade com ela. Esta
-ferramenta perimite o registro em diversos níveis, como
+ferramenta perimite o registro em diversos níveis, como:
 \begin{itemize}
   \em
 \item info
@@ -36,26 +36,27 @@ a implantação do sistema.
 
 O diagrama \ref{fig:jenkins} ilustra o funcionamento da ferramenta:
 \begin{enumerate}
-\item uma instância dela, rodando no ambiente AWS tem acesso ao código no
+\item Uma instância dela, rodando no ambiente AWS tem acesso ao código no
 github;
-\item no momento do \gls{deploy}, a instância, rodando em uma máquina
+\item No momento do \gls{deploy}, a instância, rodando em uma máquina
   virtual cria um processo filho, que realiza o \emph{checkout} do
   código fonte no Github, executa testes e o \emph{build} da
   aplicação;
-\item uma cópia deste \emph{build} é salva em uma máquina virtual
+\item Uma cópia deste \emph{build} é salva em uma máquina virtual
   secundária, como histórico das versões da aplicação;
-\item pr fim, na máquina virtual final, onde o sistema será
+\item Por fim, na máquina virtual final, onde o sistema será
   implantado, a imagem é copiada e iniciada.
 \end{enumerate}
 Vale notar que, quando o \emph{deploy} é realizado, uma instância só é
 derrubada quando uma nova instância, de uma nova versão, está
 plenamente operante.
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \caption{Diagrama ilustrando o processo de \emph{deploy}.}
   \includegraphics[scale=0.50]{images/deploy}
   \label{fig:jenkins}
+  \fonte{Os Autores}
 \end{figure}
 
 Para o \gls{frontend}, no entanto, não existem ferramentas de
@@ -107,7 +108,7 @@ No entanto, especificamente para a linguagem Java,
 \end{verbatim}
 \end{itemize}
 
-No backend, a estrutura de pacotes vai ser bem dividida, tendo o pacote controller para os controllers e endpoints, mapper para os mappers. O model, service e repository de uma entidade ficarão no mesmo pacote cujo nome é o mesmo nome da entidade.
+No \gls{backend}, a estrutura de pacotes vai ser bem dividida, tendo o pacote controller para os controllers e endpoints, mapper para os mappers. O model, service e repository de uma entidade ficarão no mesmo pacote cujo nome é o mesmo nome da entidade.
 
 \subsection{\emph{Designs Patterns}}
 
@@ -123,7 +124,7 @@ O Clean Code é um conjunto de boas práticas para melhorar o entendimento do c�
 	\item Evitar booleanos de forma implícita.
 	\item Evitar condicionais negativos (por exemplo, uma função com nome "naoDevoExecutar()"), visto que dificulta a compreensão de código.
 	\item Encapsular condicionais.
-	\item Nunca comentar o óbio no código.
+	\item Nunca comentar o óbvio no código.
 	\item Utilizar funções pequenas, tanto para melhorar a leitura quanto para respeitar os padrões do SOLID.
 \end{itemize}
 
@@ -177,7 +178,7 @@ biblioteca Mockito quando necessário simular comportamentos de objetos
 que não são o alvo da suite de teste. Este framework ainda oferece
 ferramentas para testar o banco de dados, ou melhor, testar a conexão
 com o banco e verificar o comportamento das classes de acesso a ele.
-Já os teste de \gls{frontend} serão feitos com a biblioteca Jest,
+Já os testes de \gls{frontend} serão feitos com a biblioteca Jest,
 que auxilia a construção de testes unitários, e por se tratar de uma
 \gls{GUI}, as interações de usuário devem ser simuladas também. Para tanto, a
 biblioteca React Testing Library será usada.

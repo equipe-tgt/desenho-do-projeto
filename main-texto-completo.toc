@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {1.1}Contextualização}{9}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problematização}{10}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Justificativa}{12}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Objetivos}{12}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Objetivos}{13}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Análise da Concorrência}{13}{section.1.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Revisão Bibliográfica}}{15}{chapter.2}%
@@ -20,7 +20,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Desenvolvimento da Aplicação}}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Arquitetura}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Escopo do Projeto}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Escopo do Projeto}{21}{section.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.0.1}Organização: POC e MVP}{23}{subsubsection.3.2.0.1}%
 \contentsline {subsubsection}{\numberline {3.2.0.2}Requisitos Funcionais}{23}{subsubsection.3.2.0.2}%
 \contentsline {subsubsection}{\numberline {3.2.0.3}Requisitos Não Funcionais}{24}{subsubsection.3.2.0.3}%
@@ -54,13 +54,13 @@
 \contentsline {section}{\numberline {3.6}Escalabilidade}{41}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Segurança, Privacidade e Legislação}{42}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Viabilidade Financeira}{43}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Gerenciamento de Custos}{43}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.1}Gerenciamento de Custos}{44}{subsection.3.8.1}%
 \contentsline {subsubsection}{\numberline {3.8.1.1}Análise de Requisitos e Desenvolvimento}{44}{subsubsection.3.8.1.1}%
 \contentsline {subsubsection}{\numberline {3.8.1.2}Manutenções}{44}{subsubsection.3.8.1.2}%
 \contentsline {subsection}{\numberline {3.8.2}Custos de deploy e de Ambiente de Produção}{44}{subsection.3.8.2}%
 \contentsline {subsubsection}{\numberline {3.8.2.1}Frontend}{44}{subsubsection.3.8.2.1}%
 \contentsline {subsubsection}{\numberline {3.8.2.2}Backend}{44}{subsubsection.3.8.2.2}%
-\contentsline {subsubsection}{\numberline {3.8.2.3}Banco de Dados}{44}{subsubsection.3.8.2.3}%
+\contentsline {subsubsection}{\numberline {3.8.2.3}Banco de Dados}{45}{subsubsection.3.8.2.3}%
 \contentsline {subsection}{\numberline {3.8.3}Medidas de Obtenção de Retorno Financeiro}{45}{subsection.3.8.3}%
 \contentsline {subsection}{\numberline {3.8.4}Conclusão}{45}{subsection.3.8.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -68,9 +68,11 @@
 \contentsline {section}{\numberline {4.1}Metodologia de Gestão e Desenvolvimento de Projeto}{46}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Organização da Equipe}{46}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Gestão de Tempo}{47}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Histórias de usuário}{48}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Diagrama de Gantt}{49}{section.4.5}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{48}{section*.12}%
-\contentsline {chapter}{GLOSSÁRIO}{49}{section*.12}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{51}{section*.12}%
+\contentsline {chapter}{GLOSSÁRIO}{52}{section*.12}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}

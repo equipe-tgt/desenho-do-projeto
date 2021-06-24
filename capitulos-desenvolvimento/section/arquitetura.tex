@@ -24,23 +24,24 @@ arquitetura.
   \caption{Arquitetura Lixt}
   \label{fig:cli-srv}
   \includegraphics[scale=0.4]{lixt}
+  \fonte{Os Autores}
 \end{figure}
 
 A comunicação entre estes serviços será feita com o uso do protocolo
-\label{sig:https}\hyperlink{s:http}{HTTPS}, que permite a aplicação
-cliente realizar chamadas ao servidor através de urls, seja para
+\gls{https}, que permite a aplicação
+cliente realizar chamadas ao servidor através de \gls{url}, seja para
 buscar informações para apresentar ao usuário ou postar informações
 coletadas dele. O \gls{framework} Spring, além de abstrair a implementação
-da lógica de um servidor, implementa \emph{listeners} para estas urls,
+da lógica de um servidor, implementa \emph{listeners} para estas \glspl{url},
 auxiliando a criação de pontos na aplicação do servidor focados na
 comunicação com a aplicação cliente.
 
-O uso do protocolo HTTPS oferece algumas vantagens a aplicação
+O uso do protocolo \gls{https} oferece algumas vantagens a aplicação
 \gls{frontend}, que não precisa esperar uma solicitação ao
 \gls{backend} ser finalizada antes de realizar outras solicitações,
 aumentando a repsonsividade da aplicação cliente. Para além disso,
-quando combinada ao modelo \label{sig:rest}\gls{REST} na
-construção da \label{sig:API}\gls{API}, o protocolo HTTP
+quando combinada ao modelo \gls{rest} na
+construção da \gls{API}, o protocolo HTTP
 oferece meios eficientes para que as aplicações se comuniquem.
 
 Como plataforma de servidor, o serviço AWS será utilizado, uma vez que

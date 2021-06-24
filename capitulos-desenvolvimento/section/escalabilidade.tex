@@ -19,15 +19,16 @@ produção. Por manter um histórico das versões já usadas, a ferramenta
 permite selecionar facilmente uma versão antiga caso seja necessária
 uma ou mais instâncias novas em produção. O diagrama
 \ref{fig:escalabilidade} demonstra como este processo ocorre: a
-partir de imagens salvas dos \gls{deploy} anteriores, uma nova
+partir de imagens salvas dos \glspl{deploy} anteriores, uma nova
 instância da aplicação é levantada para dividir a carga colocada entre
 elas.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \caption{Diagrama de escalabilidade}
   \label{fig:escalabilidade}
   \includegraphics[scale=0.50]{images/escalar}
+  \fonte{Os Autores}
 \end{figure}
 
 Isto significa ainda que uma ferramenta de \gls{proxy} reverso é necessária
@@ -37,14 +38,15 @@ Gateway, protege a aplicação, ao concentrar todas as requisições
 externas, e em seguida, direcioná-las internamente entre as
 instâncias, sem que o usuário final tenha acesso ao endereço delas e
 portanto não possa fazer requisições diretamente a elas.
-O diagrama \ref{fig:proxy} demontra o funcionamento deste proxy
+O diagrama \ref{fig:proxy} demonstra o funcionamento deste proxy
 reverso.
 
-\begin{figure}
+\begin{figure}[!htb]
   \centering
   \caption{Funcionamento de um proxy reverso.}
   \label{fig:proxy}
   \includegraphics[scale=0.50]{proxy}
+  \fonte{Os Autores}
 \end{figure}
 
 Desta forma, uma instância de um proxy reverso deve estar rodando
