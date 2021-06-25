@@ -31,15 +31,15 @@ elas.
   \fonte{Os Autores}
 \end{figure}
 
-Isto significa ainda que uma ferramenta de \gls{proxy} reverso é necessária
-para realizar o \gls{load-balancing} entre as diversas instâncias que
-compõe o \gls{backend}. Uma ferramenta deste tipo, como o Spring Cloud
-Gateway, protege a aplicação, ao concentrar todas as requisições
-externas, e em seguida, direcioná-las internamente entre as
-instâncias, sem que o usuário final tenha acesso ao endereço delas e
-portanto não possa fazer requisições diretamente a elas.
-O diagrama \ref{fig:proxy} demonstra o funcionamento deste proxy
-reverso.
+Isto significa ainda que uma ferramenta de \gls{proxy} reverso é
+necessária para realizar o \gls{load-balancing} entre as diversas
+instâncias que compõe o \gls{backend}. Uma ferramenta deste tipo, como
+o Elastic Load Balancer, ferramenta da própria amazon que protege a
+aplicação ao concentrar todas as requisições externas, e em seguida,
+direcioná-las internamente entre as instâncias, sem que o usuário
+final tenha acesso ao endereço delas e, portanto, não possa fazer
+requisições diretamente a elas.  O diagrama \ref{fig:proxy} demontra o
+funcionamento deste proxy reverso.
 
 \begin{figure}[!htb]
   \centering
